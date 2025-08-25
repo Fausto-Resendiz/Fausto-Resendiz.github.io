@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Fausto Reséndiz</title>
+    <meta name="description" content="Portafolio profesional de Fausto Reséndiz, Programador y Artista 2D/3D">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">PORTAFOLIO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#pelis" onclick="seleccionar()">ANIMACIONES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">GALERÍA</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/fara.jpg" alt="Foto de perfil de Fausto Reséndiz">
+            </div>
+            <h1>Fausto Reséndiz</h1>
+            <h2>Programción - Artista 2D/3D</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/tlamatbit.mx/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/fausto-ángel-reséndiz-álvarez-a38160304/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/fausrdz?tab=overview&from=2025-07-01&to=2025-07-11" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Fausto Reséndiz.</span> Desarrollador de videojuegos, experiencias en realidad virtual, artista 3D/2D, especializado en el manejo de motores gráficos como Unreal Engine 5, modelado de objetos 3D y animador 2D. Miembro de la sociedad de desarrollo en videojuegos presente en la facultad de ingeniería, fungiendo el rol de mesa directiva como líder del área de diseño.</p>
+            
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li><strong>Email</strong> faustoresendiz@live.com.mx</li>
+                        <li><strong>Teléfono</strong> 5541338005</li>
+                        <li><strong>Instagram</strong> @tlamatbit.mx</li>
+                        <li><strong>Formación</strong>Ingeniero en computación</li>
+                        <li><strong>Cargo</strong> <span>FREELANCE</span></li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>DESARROLLO DE VIDEOJUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-clapperboard"></i> 
+                            <span>ANIMACIÓN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette"></i> 
+                            <span>ARTE 2D</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i> 
+                            <span>DESARROLLO WEB</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-microchip"></i> 
+                            <span>SOPORTE TÉCNICO Y HARDWARE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-cubes"></i> 
+                            <span>IMPRESIÓN 3D</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-cube"></i> 
+                            <span>MODELADO 3D</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-image"></i> 
+                            <span>RENDERS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="window.location.href='img/cv.pdf';">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>85%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>85%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>UNREAL ENGINE</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>80%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>OPENTOONZ</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>75%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>BLENDER</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>90%</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>80%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>80%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>90%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>70%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso"><span>80%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION ANIMACIONES -->
+    <section id="pelis" class="pelis">
+        <div class="titulo-contenido">
+            <h2>Animaciones</h2>
+            <p style="text-align: justify;">
+                Esta sección reúne algunas de animaciones desarrolladas en colaboración con estudios, sociedades y proyectos propios. Entre ellos destaca 
+                <strong>Spectral Rex Estudio</strong>, un estudio de diseñadores de videojuegos que crean experiencias VR, 2D y 3D originales; y 
+                <strong>SODVI</strong> (Sociedad de Desarrollo de Videojuegos), una organización estudiantil de la UNAM dedicada a fomentar la creación de videojuegos de la Facultad de Ingeniería, UNAM. 
+                Cada pieza presentada refleja la evolución de mi formación autodidacta en el campo de la animación, vfx y modelado 3D realizado en blender.
+            </p>
+            <div class="galeria-central">
+                <div class="video-container">
+                    <video loop muted playsinline preload="none">
+                        <source src="img/GAMERDDAY1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video loop muted playsinline preload="none">
+                        <source src="img/SODVI.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video loop muted playsinline preload="none">
+                        <source src="img/Insomnio.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video loop muted playsinline preload="none">
+                        <source src="img/LOGO_SP.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video loop muted playsinline preload="none">
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video loop muted playsinline preload="none">
+                        <source src="img/GAMERDAY2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Estudiante de Ingenieria en Computación</h4>
+                        <span class="casa">Universidad Nacional Autonoma de México</span>
+                        <span class="fecha">2020 - 2026</span>
+                        <p style="text-align: justify;">Cursando el Septimo semestre de la carrera y aspirando a realizar el servicio social en la Escuela Nacional de Artes Cinematográficas como "post production programer" en el entorno de Unreal Engine.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Certificaciones</h4>
+                        <span class="casa">Contando con las siguientes Certificaciones</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p style="text-align: justify;">Manejo básico y avanzado de Unreal Engine, Diseño de personajes, manejo básico y avanzado de Blender, manejo básico y avanzado de Opentoonz, Matlab Onramp, Simulink Onramp y Nivel 2B para el idioma ingles.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Expositor</h4>
+                        <span class="casa">UNAM/SODVI</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p style="text-align: justify;">Expositor en el primer congreso anual de videojuegos del Instituto Politécnico Nacional, Encargado de impartir el curso de Animación 2D por parte de la Sociedad de Desarrollo en Videojuegos en la facultad de Ingeniería.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>SODVI/GEA GONZÁLEZ</h4>
+                        <span class="casa">SODVI</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p style="text-align: justify;">Fungiendo como modelador 3D y programador de un entorno virtual en el motor gráfico Unity para la colaboración con el hospital Gea González.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador para estudio privado</h4>
+                        <span class="casa">Specrtral Rex</span>
+                        <span class="fecha">2024</span>
+                        <p style="text-align: justify;">Desempeñando el papel de programador, artista 2D y 3D, formo parte del equipo de trabajo del estudio indie Specrtral Rex, con la elaboración de un juego en realidad virtual que será expuesto a nivel internacional.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Empresa de Modelado</h4>
+                        <span class="casa">Aún por definir</span>
+                        <span class="fecha">2024</span>
+                        <p style="text-align: justify;">Actualmente cuento con un emprendimiento mediante la realización de modelos y renders, principalmente arquitectónicos, con trabajo bajo demanda.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>Galería</h2>
+            <h3>Spectral Rex Estudio</h3>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/SPREX.png" alt="Proyecto Spectral Rex">
+                    <div class="overlay">
+                        <h3>IXPUXTEQUI</h3>
+                        <p>Arte promocional para el videojuego de terror en VR disponible proximamente en la tienda de Meta</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/interfaz.png" alt="Modelado 3D">
+                    <div class="overlay">
+                        <h3>Interfaz</h3>
+                        <p>Propuesta de interfaz que serviría como instructivo para el videojuego</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/codice2.png" alt="Diseño Industrial">
+                    <div class="overlay">
+                        <h3>Arte del videojuego</h3>
+                        <p>Propuesta 1 de dibujo que funge el papel de códice que el jugador debe hallar dentro del mapa</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/codice1.png" alt="Personaje 3D">
+                    <div class="overlay">
+                        <h3>Arte del videojuego</h3>
+                        <p>Propuesta 2 de dibujo que funge el papel de códice que el jugador debe hallar dentro del mapa</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/codice3.png" alt="Escena 3D">
+                    <div class="overlay">
+                        <h3>Arte del videojuego</h3>
+                        <p>Propuesta 3 de dibujo que funge el papel de códice que el jugador debe hallar dentro del mapa</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/codice4.png" alt="Animación 2D">
+                    <div class="overlay">
+                        <h3>Arte del videojuego</h3>
+                        <p>Propuesta 4 de dibujo que funge el papel de códice que el jugador debe hallar dentro del mapa</p>
+                    </div>
+                </div>
+            </div>
+            <!-- apartado 2 -->
+            <h3><br>Sociedad de Desarrollo en Videojuegos</h3>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/SodviHoodie.gif" alt="Proyecto Spectral Rex">
+                    <div class="overlay">
+                        <h3>Sudadera SODVI</h3>
+                        <p>Diseño que da identidad visual a la sociedad SODVI, con elementos inspirados en la cultura gamer y un personaje de un videojuego creado por nuestros predecesores. 
+                            Modelado y animado en Blender para su presentación.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TSHIRT.gif" alt="Modelado 3D">
+                    <div class="overlay">
+                        <h3>Playera SODVI</h3>
+                        <p>Diseño que da identidad visual a la sociedad SODVI, con elementos inspirados en la cultura gamer y un personaje de un videojuego creado por nuestros predecesores. 
+                            Modelado y animado en Blender para su presentación.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ID.png" alt="Diseño Industrial">
+                    <div class="overlay">
+                        <h3>Imagen de perfil</h3>
+                        <p>Este diseño forma parte de la estrategia de identidad visual de SODVI en Instagram, alineada con su estilo y visión de la sociedad.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/IC1.png" alt="Personaje 3D">
+                    <div class="overlay">
+                        <h3>Curso Diseño de Personajes</h3>
+                        <p>Ilustración conceptual realizada como fan art para representar visualmente el concepto Diseño de Personajes en la campaña de promoción de los cursos intersemestrales de SODVI.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/IC2.png" alt="Escena 3D">
+                    <div class="overlay">
+                        <h3>Curso Unreal Engine</h3>
+                        <p>Ilustración conceptual realizada como fan art para representar visualmente el papel del Engine en la industria como parte de la campaña de promoción de los cursos intersemestrales de SODVI.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/IC3.png" alt="Animación 2D">
+                    <div class="overlay">
+                        <h3>Curso Game Design</h3>
+                        <p>Ilustración conceptual realizada como fan art para representar visualmente el concepto game design en la campaña de promoción de los cursos intersemestrales de SODVI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre" required>
+                    <input type="tel" placeholder="Número telefónico">
+                    <input type="email" placeholder="Dirección de correo" required>
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="Ubicación en mapa">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>CDMX
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>5541338005 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>faustoresendiz@live.com.mx
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba" aria-label="Volver arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/tlamatbit.mx/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/fausto-angel-resendiz-alvarez-a38160304/" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/fausrdz?tab=overview&from=2025-07-01&to=2025-07-11" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 Fausto Reséndiz - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
