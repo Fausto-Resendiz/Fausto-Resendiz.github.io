@@ -49,6 +49,7 @@ html {
     padding: 3px;
     transition: .5s;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .contenedor-header header nav ul li a:hover {
@@ -665,9 +666,10 @@ html {
 .launcher-info p {
     font-size: 15px;
     color: #ccc;
-    max-width: 580px;
+    max-width: 100%;
     line-height: 1.55;
     margin-bottom: 12px;
+    text-align: justify;
 }
 
 .launcher-tags {
@@ -691,13 +693,23 @@ html {
     position: relative;
     z-index: 2;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 0 14px 18px;
+    gap: 10px;
+}
+
+/* Fila con flechas + rail */
+.launcher-rail-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
     gap: 8px;
 }
 
 .launcher-rail {
     display: flex;
+    justify-content: center;
     gap: 14px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -797,12 +809,11 @@ html {
 
 /* Puntos indicadores */
 .launcher-dots {
-    position: absolute;
-    bottom: 88px;
-    right: 20px;
-    z-index: 3;
     display: flex;
-    gap: 6px;
+    justify-content: center;
+    gap: 8px;
+    z-index: 3;
+    padding-bottom: 4px;
 }
 
 .launcher-dot {

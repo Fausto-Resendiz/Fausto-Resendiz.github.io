@@ -233,7 +233,7 @@
                 </div>
                 <div class="video-container">
                     <video loop muted playsinline preload="none">
-                        <source src="" type="video/mp4">
+                        <source src="img/talasofobia.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="video-container">
@@ -306,6 +306,15 @@
                         <span class="casa">Iniciativa creada por estudiantes para estudiantes</span>
                         <span class="fecha">2024</span>
                         <p style="text-align: justify;">Brindamos soluciones tecnológicas y creativas de calidad, accesibles y profesionales, impulsadas por talento en formación y un equipo en constante actualización.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Presidente</h4>
+                        <span class="casa">Sociedad de Desarrollo de Videojuegos </span>
+                        <span class="fecha">2025</span>
+                        <p style="text-align: justify;">Como parte de la mesa directiva, lidero la representación de la organización a nivel universitario, articulando iniciativas, alianzas y espacios de colaboración que fortalecen la presencia de la comunidad dentro y fuera del entorno académico. Este rol implica coordinar esfuerzos estratégicos, impulsar proyectos y ser un puente entre estudiantes, institución e industria.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -422,7 +431,7 @@
     <section id="personal" class="personal">
         <div class="contenido-seccion">
             <h2>Proyectos Personales</h2>
-            <p class="personal-intro">Aquí reúno mis iniciativas propias: desde prototipos tempranos hasta proyectos terminados y los que actualmente están en marcha.</p>
+            <p style="text-align: justify;" class="personal-intro">Este espacio reúne algunos de los proyectos que mejor representan mi trabajo, desde ideas que comenzaron como prototipos, evolucionaron hasta convertirse en desarrollos completos y otros que siguen creciendo. Es una ventana a lo que he construido… aunque no todo cabe aquí.</p>
 
             <!-- ── CARRUSEL TIPO XBOX LAUNCHER ── -->
             <div class="xbox-launcher" id="xboxLauncher">
@@ -440,124 +449,72 @@
 
                 <!-- Carril de tarjetas -->
                 <div class="launcher-rail-wrap">
-                    <button class="launcher-arrow left" id="launcherPrev" aria-label="Anterior">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
 
-                    <div class="launcher-rail" id="launcherRail">
+                    <!-- Fila: flecha izq + rail + flecha der -->
+                    <div class="launcher-rail-row">
+                        <button class="launcher-arrow left" id="launcherPrev" aria-label="Anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
 
-                        <!-- ── PROYECTO 1 ── -->
-                        <div class="launcher-card active"
-                             data-title="Nombre del Proyecto 1"
-                             data-desc="Descripción detallada del proyecto 1. Explica de qué trata, qué tecnologías usaste y cuál es su objetivo."
-                             data-badge="TERMINADO"
-                             data-tags="Unreal Engine,Blender,C++"
-                             data-bg="img/demo1_thumb.jpg">
-                            <div class="card-media">
-                                <!-- Reemplaza src con la ruta real de tu video -->
-                                <video src="img/demo1.mp4" muted loop playsinline preload="none"></video>
-                                <div class="card-play-icon"><i class="fa-solid fa-play"></i></div>
+                        <div class="launcher-rail" id="launcherRail">
+
+                            <!-- ── PROYECTO 1 ── -->
+                            <div class="launcher-card active"
+                                 data-title="TALASOFOBIA"
+                                 data-desc="Talasofobia es una experiencia inmersiva de terror psicológico que explora el océano profundo a través de un descenso al abismo de las Marianas. La experiencia integra narrativa ambiental, referencias históricas y una atmósfera sensorial basada en oscuridad, presión y aislamiento para generar tensión constante, apostando por un alto nivel de realismo visual y sonoro. Fungiendo como programador y artista 3D, liderando la conceptualización del proyecto y contribuyendo al desarrollo del entorno."
+                                 data-badge="En desarrollo"
+                                 data-tags="Unreal Engine,Blender,C++,VR"
+                                 data-bg="img/FondoTF.png">
+                                <div class="card-media">
+                                    <video src="img/PruebaTF.mp4" muted loop playsinline preload="none"></video>
+                                    <div class="card-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="card-label">Maquetado</span>
                             </div>
-                            <span class="card-label">Proyecto 1</span>
-                        </div>
 
-                        <!-- ── PROYECTO 2 ── -->
-                        <div class="launcher-card"
-                             data-title="Nombre del Proyecto 2"
-                             data-desc="Descripción detallada del proyecto 2. Puedes mencionar el contexto, reto técnico y resultado obtenido."
-                             data-badge="PROTOTIPO"
-                             data-tags="JavaScript,HTML,CSS"
-                             data-bg="img/demo2_thumb.jpg">
-                            <div class="card-media">
-                                <video src="img/demo2.mp4" muted loop playsinline preload="none"></video>
-                                <div class="card-play-icon"><i class="fa-solid fa-play"></i></div>
+                            <!-- ── PROYECTO 2 ── -->
+                            <div class="launcher-card"
+                                 data-title="Plataforma VR de Capacitación Técnica"
+                                 data-desc="Plataforma inmersiva en realidad virtual diseñada para la capacitación técnica en soporte y mantenimiento de computadoras. El proyecto propone un entorno interactivo donde los usuarios pueden realizar prácticas de forma segura, accesible y repetible, fortaleciendo competencias técnicas sin necesidad de equipamiento físico. Concebida como una solución para educación, empresas y entusiastas, la experiencia optimiza el aprendizaje práctico mediante simulaciones realistas en entornos controlados. Desarrollé el proyecto como expositor y desarrollador, liderando la conceptualización e implementación del prototipo."
+                                 data-badge="prototipo"
+                                 data-tags="Unreal Engine,Blender,C++,VR"
+                                 data-bg="img/demo2_thumb.jpg">
+                                <div class="card-media">
+                                    <video src="img/VRcp.mp4" muted loop playsinline preload="none"></video>
+                                    <div class="card-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="card-label">BETA</span>
                             </div>
-                            <span class="card-label">Proyecto 2</span>
-                        </div>
 
-                        <!-- ── PROYECTO 3 ── -->
-                        <div class="launcher-card"
-                             data-title="Nombre del Proyecto 3"
-                             data-desc="Descripción detallada del proyecto 3. Ideal para resaltar las mecánicas, arte o funcionalidades principales."
-                             data-badge="EN DESARROLLO"
-                             data-tags="Blender,Python"
-                             data-bg="img/demo3_thumb.jpg">
-                            <div class="card-media">
-                                <video src="img/demo3.mp4" muted loop playsinline preload="none"></video>
-                                <div class="card-play-icon"><i class="fa-solid fa-play"></i></div>
+                            <!-- ── PROYECTO 3 ── -->
+                            <div class="launcher-card"
+                                 data-title="Tlamat Bit Studio"
+                                 data-desc="Somos una organización creada por estudiantes para estudiantes, dedicada a ofrecer soluciones tecnológicas y creativas de alta calidad a costos accesibles. En Tlamat Bit Studio creemos en el talento en formación y en la importancia de brindar un servicio profesional, cercano y eficiente, respaldado por un equipo en constante actualización. Garantizamos un servicio de calidad con atención personalizada y soluciones a medida, asegurando que cada cliente reciba el mejor resultado."
+                                 data-badge="EN DESARROLLO"
+                                 data-tags="Software Development, 3D Printing & Modeling, PC building & maintenance, Web Development, Animation"
+                                 data-bg="img/TLAMAT.jpg">
+                                <div class="card-media">
+                                    <video src="img/tlamatCV.mp4" muted loop playsinline preload="none"></video>
+                                    <div class="card-play-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <span class="card-label">Publicidad</span>
                             </div>
-                            <span class="card-label">Proyecto 3</span>
-                        </div>
 
-                        <!-- ── Agrega más tarjetas aquí con el mismo patrón ── -->
+                            <!-- ── Agrega más tarjetas aquí con el mismo patrón ── -->
 
-                    </div><!-- /launcher-rail -->
+                        </div><!-- /launcher-rail -->
 
-                    <button class="launcher-arrow right" id="launcherNext" aria-label="Siguiente">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
+                        <button class="launcher-arrow right" id="launcherNext" aria-label="Siguiente">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div><!-- /launcher-rail-row -->
+
+                    <!-- Puntos indicadores — centrados debajo del rail -->
+                    <div class="launcher-dots" id="launcherDots"></div>
+
                 </div><!-- /launcher-rail-wrap -->
 
-                <!-- Puntos indicadores -->
-                <div class="launcher-dots" id="launcherDots"></div>
-
             </div><!-- /xbox-launcher -->
-
-            <!-- ── PROYECTOS CULMINADOS ── -->
-            <div class="personal-subseccion">
-                <div class="personal-subtitulo">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <h3>Proyectos Culminados</h3>
-                </div>
-                <div class="galeria">
-                    <!-- Ejemplo – reemplaza src y texto -->
-                    <div class="proyecto">
-                        <img src="img/proyecto_culminado1.png" alt="Proyecto culminado 1">
-                        <div class="overlay">
-                            <h3>Nombre del proyecto</h3>
-                            <p>Descripción breve del proyecto terminado.</p>
-                        </div>
-                    </div>
-                    <!-- Añade más .proyecto aquí -->
-                </div>
-            </div>
-
-            <!-- ── PROTOTIPOS / EN DESARROLLO ── -->
-            <div class="personal-subseccion">
-                <div class="personal-subtitulo">
-                    <i class="fa-solid fa-flask"></i>
-                    <h3>Prototipos &amp; En Desarrollo</h3>
-                </div>
-                <div class="galeria">
-                    <div class="proyecto">
-                        <img src="img/prototipo1.png" alt="Prototipo 1">
-                        <div class="overlay">
-                            <h3>Nombre del prototipo</h3>
-                            <p>Descripción del prototipo o proyecto en fase de desarrollo.</p>
-                        </div>
-                    </div>
-                    <!-- Añade más .proyecto aquí -->
-                </div>
-            </div>
-
-            <!-- ── EN PROCESO ── -->
-            <div class="personal-subseccion">
-                <div class="personal-subtitulo">
-                    <i class="fa-solid fa-spinner"></i>
-                    <h3>En Proceso</h3>
-                </div>
-                <div class="galeria en-proceso">
-                    <div class="proyecto wip">
-                        <img src="img/wip1.png" alt="Proyecto en proceso">
-                        <div class="overlay">
-                            <h3>Nombre del proyecto</h3>
-                            <p>Actualmente en desarrollo activo.</p>
-                        </div>
-                        <div class="wip-badge"><i class="fa-solid fa-rotate"></i> WIP</div>
-                    </div>
-                    <!-- Añade más .proyecto.wip aquí -->
-                </div>
-            </div>
 
         </div>
     </section>
